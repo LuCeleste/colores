@@ -12,6 +12,7 @@ body {
   background-color: #000000;
   color: #000000;
   height: 100vh;
+  overflow: hidden;
   transition: 1s;
 }
 
@@ -23,6 +24,7 @@ body {
   margin-top: 10px;
   border-radius: 2rem;
   transition: 4s;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -41,7 +43,7 @@ body {
 }
 
 .bi {
-  font-size: 10rem;
+  font-size: 8rem;
   position: absolute;
   top: 10px;
   left: 10px;
