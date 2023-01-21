@@ -1,0 +1,63 @@
+
+body {
+    background-image: url("../media/fondo.png");
+    background-size: cover;
+    // background-position: start;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    color: $negro;
+    height: 100vh;
+    transition: 1s;
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    border-radius: 2rem;
+    transition: 4s;
+    
+
+}
+.btn{
+    width: 120px;
+    font-size: 1rem;
+    border: solid #000000;
+    border-radius: 1rem;
+    padding: 5px;
+    z-index: 3;
+    &:focus{
+        box-shadow: none;
+    }
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.bi{
+    font-size: 5rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgb(0, 0, 0);
+    transition: 1.2s;
+}
+.doce{
+    top: 190px;
+    transition: 1.6s;
+}
+.once{
+    left: 200px;
+    top: 125px;
+    transition: 1.4s;
+}
+
+.uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho,.nueve, .diez {
+display: none;
+
+}
+
+.container-fluid{
+    margin: 0;
+}

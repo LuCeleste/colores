@@ -12,7 +12,6 @@ body {
   background-color: #000000;
   color: #000000;
   height: 100vh;
-  overflow: hidden;
   transition: 1s;
 }
 
@@ -24,12 +23,11 @@ body {
   margin-top: 10px;
   border-radius: 2rem;
   transition: 4s;
-  flex-wrap: wrap;
 }
 
 .btn {
   width: 120px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border: solid #000000;
   border-radius: 1rem;
   padding: 5px;
@@ -43,7 +41,7 @@ body {
 }
 
 .bi {
-  font-size: 8rem;
+  font-size: 5rem;
   position: absolute;
   top: 10px;
   left: 10px;
@@ -52,7 +50,7 @@ body {
 }
 
 .doce {
-  top: 300px;
+  top: 190px;
   transition: 1.6s;
 }
 
@@ -62,65 +60,119 @@ body {
   transition: 1.4s;
 }
 
-.diez {
-  left: 400px;
-  top: 180px;
-  transition: 1.8s;
-}
-
-.nueve {
-  left: 500px;
-  transition: 2s;
-}
-
-.ocho {
-  left: 550px;
-  top: 400px;
-  transition: 2.2s;
-}
-
-.siete {
-  left: 620px;
-  top: 200px;
-  transition: 2.4s;
-}
-
-.seis {
-  top: 450px;
-  left: 700px;
-  transition: 2.6s;
-}
-
-.cinco {
-  top: 305px;
-  left: 865px;
-  transition: 2.8s;
-}
-
-.cuatro {
-  top: 81px;
-  left: 865px;
-  transition: 3.2s;
-}
-
-.tres {
-  top: 450px;
-  left: 1045px;
-  transition: 3s;
-}
-
-.dos {
-  top: 187px;
-  left: 1122px;
-  transition: 3.6s;
-}
-
-.uno {
-  top: 430px;
-  left: 1297px;
-  transition: 3.4s;
+.uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho, .nueve, .diez {
+  display: none;
 }
 
 .container-fluid {
   margin: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-image: url("../media/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    color: #000000;
+    height: 100vh;
+    width: 100vw;
+    transition: 1s;
+    overflow: hidden;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    border-radius: 2rem;
+    transition: 4s;
+  }
+  .btn {
+    width: 120px;
+    font-size: 1.5rem;
+    border: solid #000000;
+    border-radius: 1rem;
+    padding: 5px;
+    z-index: 3;
+  }
+  .btn:focus {
+    box-shadow: none;
+  }
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  .bi {
+    font-size: 8rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgb(0, 0, 0);
+    transition: 1.2s;
+  }
+  .doce {
+    top: 300px;
+    transition: 1.6s;
+  }
+  .once {
+    left: 200px;
+    top: 125px;
+    transition: 1.4s;
+  }
+  .uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho, .nueve, .diez {
+    display: block;
+  }
+  .diez {
+    left: 400px;
+    top: 180px;
+    transition: 1.8s;
+  }
+  .nueve {
+    left: 500px;
+    transition: 2s;
+  }
+  .ocho {
+    left: 550px;
+    top: 400px;
+    transition: 2.2s;
+  }
+  .siete {
+    left: 620px;
+    top: 200px;
+    transition: 2.4s;
+  }
+  .seis {
+    top: 450px;
+    left: 700px;
+    transition: 2.6s;
+  }
+  .cinco {
+    top: 305px;
+    left: 865px;
+    transition: 2.8s;
+  }
+  .cuatro {
+    top: 81px;
+    left: 865px;
+    transition: 3.2s;
+  }
+  .tres {
+    top: 450px;
+    left: 1045px;
+    transition: 3s;
+  }
+  .dos {
+    top: 187px;
+    left: 1122px;
+    transition: 3.6s;
+  }
+  .uno {
+    top: 430px;
+    left: 1297px;
+    transition: 3.4s;
+  }
+  .container-fluid {
+    margin: 0;
+  }
 }
